@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>食品从业人员健康证明验证</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+            background: linear-gradient(135deg, #1a5276 0%, #2980b9 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .container { background: #fff; border-radius: 12px; box-shadow: 0 10px 40px rgba(0,0,0,0.3); width: 100%; max-width: 500px; }
+        .header { background: linear-gradient(135deg, #c0392b 0%, #e74c3c 100%); color: white; padding: 25px 20px; text-align: center; }
+        .header h1 { font-size: 22px; font-weight: bold; margin-bottom: 5px; }
+        .header .subtitle { font-size: 14px; opacity: 0.9; }
+        .content { padding: 30px 25px; }
+        .info-row { display: flex; margin-bottom: 18px; }
+        .info-row:last-child { margin-bottom: 0; }
+        .label { width: 90px; color: #555; font-size: 15px; }
+        .value { flex: 1; color: #222; font-size: 15px; }
+        .value input { width: 100%; padding: 8px; border: none; background: transparent; font-size: 15px; color: #222; }
+        .validity { display: flex; align-items: center; gap: 10px; }
+        .validity .tag { background: #27ae60; color: white; padding: 4px 12px; border-radius: 4px; font-size: 13px; }
+        .saved-badge { text-align: center; padding: 10px; background: #d4edda; color: #155724; font-size: 14px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>广东省食品从业人员健康证明验证</h1>
+            <div class="subtitle">Guangdong Food Industry Employee Health Certificate</div>
+        </div>
+        <div class="content">
+            <div class="info-row"><div class="label">姓名：</div><div class="value"><input type="text" value="孙宁波" readonly></div></div>
+            <div class="info-row"><div class="label">性别：</div><div class="value"><input type="text" value="男" readonly></div></div>
+            <div class="info-row"><div class="label">身份证号：</div><div class="value"><input type="text" value="320381200611102774" readonly></div></div>
+            <div class="info-row"><div class="label">体检日期：</div><div class="value"><input type="text" value="2026年05月09日" readonly></div></div>
+            <div class="info-row"><div class="label">体检单位：</div><div class="value"><input type="text" value="广州市疾病预防控制中心" readonly></div></div>
+            <div class="info-row">
+                <div class="label">有效期：</div>
+                <div class="value validity">
+                    <input type="text" value="壹年" style="width:60px" readonly>
+                    <span class="tag">验证有效</span>
+                </div>
+            </div>
+        </div>
+        <div class="saved-badge">广州市疾病预防控制中心</div>
+    </div>
+</body>
+</html>
